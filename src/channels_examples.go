@@ -7,7 +7,7 @@ import (
 
 var wg = sync.WaitGroup{}
 
-func main() {
+/* func main() {
 	ch := make(chan int)
 	wg.Add(2)
 	go func(ch <-chan int) {
@@ -20,9 +20,9 @@ func main() {
 		wg.Done()
 	}(ch)
 	wg.Wait()
-}
+}  */
 
-/* func main() {
+func main() {
 	ch := make(chan int)
 	counter := 0
 	for j := 0; j < 5; j++ {
@@ -39,7 +39,7 @@ func main() {
 		}()
 	}
 	wg.Wait()
-} */
+}
 
 /* func main() {
 	ch := make(chan int)
